@@ -1,7 +1,7 @@
 let allArr = {results:[]} 
 let filteredArr = []
-let selectpicker = document.querySelector('.selectpicker')
-let parent = document.querySelector('.parent')
+const selectpicker = document.querySelector('.selectpicker')
+const parent = document.querySelector('.parent')
 
 
 selectpicker.addEventListener('click', function(){
@@ -13,30 +13,30 @@ updateInfo(filteredData)
 })
 
 function updateInfo(data) {
-  let rootList = document.querySelector(".new");
+  const rootList = document.querySelector(".new");
   rootList.innerHTML = ''
 
   data.results.forEach(element => {
-    let list = document.createElement("div");
+    const list = document.createElement("div");
     list.className = "d-inline-flex";
     
-    let root = document.createElement("div");
+    const root = document.createElement("div");
     root.className = "p-2";
     list.append(root);
 
-    let name = document.createElement("h4");
+    const name = document.createElement("h4");
     name.innerHTML = element.name;
     root.append(name);
 
-    let mass = document.createElement("p");
+    const mass = document.createElement("p");
     mass.innerHTML = "Mass:" + " " + element.mass;
     root.append(mass);
 
-    let gender = document.createElement("p");
+    const gender = document.createElement("p");
     gender.innerHTML = "Gender:" + " " + element.gender;
     root.append(gender);
 
-    let height = document.createElement("p");
+    const height = document.createElement("p");
     height.innerHTML = "Height:" + " " + element.height;
     root.append(height);
 
@@ -74,12 +74,12 @@ return {results: this.filteredArray}
 
 //функция, которая ищет совпадение имён. 
 
-let filter = function () {
-  let input = document.getElementById ('filter-input')
+const filter = function () {
+  const input = document.getElementById ('filter-input')
 
   input.addEventListener('keyup', function() {
   
-let filter = input.value.toLowerCase(),
+const filter = input.value.toLowerCase(),
 filterElements = document.querySelectorAll(".p-2")
 
 filterElements.forEach(item =>{
