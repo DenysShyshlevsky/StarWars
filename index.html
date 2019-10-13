@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>App JS</title>
+    <link rel='stylesheet' href='./style.css'>  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+<body>
+
+
+  
+  
+  
+  <span class="glyphicon glyphicon-triangle-bottom"></span>
+<span class="glyphicon glyphicon-triangle-top"></span>
+ <div class ='gender'>
+   Select character gender
+<select class="selectpicker"> 
+  <option selected value='all'>all</option>
+  <option value="male">male</option>
+  <option value="female">female</option>
+  <option value="n/a">n/a</option>
+</select>
+</div>
+
+<input class="form-control" type="text" placeholder="Enter character name" id="filter-input">
+
+
+
+<div class='parent'>
+<div class='old'>
+</div>
+<div class='new'></div>
+</div>
+
+
+  <ul class="pagination justify-content-start">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+
+  <button class="button">button</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
+<script src='application.js'></script>
+
+</body>
+</html>

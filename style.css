@@ -1,0 +1,14 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+.p-2 {
+ border: 1px solid #0C78FF;
+ width:300px
+}
+.gender{
+  display: flex;
+  
+}
+.selectpicker{
+  margin-left: 10px;
+}
