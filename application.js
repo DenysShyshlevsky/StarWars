@@ -97,7 +97,7 @@ filter();
 
 // sort mass
 
-const buttonMass = document.querySelector(".button");
+const buttonMass = document.querySelector(".btn");
 
 let ascending = false;
 let descending = !ascending;
